@@ -1,16 +1,16 @@
 <template>
   <li>
-    <div>
+    <base-card>
       <header>
         <h3>{{title}}</h3>
         <button>Delete</button>
       </header>
-    </div>
     <p>{{description}}</p>
     <nav>
       <a :href="link">View Resource</a> 
       <!-- QUESTION: why does the link have to be bound with : , different from the other props?  bc it is an html attribute -->
     </nav>
+    </base-card>
   </li>
 </template>
 
